@@ -1,0 +1,52 @@
+[
+    {
+      "title": "Message from Alex12",
+      "content": "Hey, how are you doing today?",
+      "received": "10 minutes ago"
+    },
+    {
+      "title": "Message from Alina55",
+      "content": "I really liked your recent post!",
+      "received": "2 hours ago"
+    },
+    {
+      "title": "Message from knightfury",
+      "content": "Do you have any book recommendations?",
+      "received": "1 day ago"
+    },
+    {
+      "title": "Message from booklover89",
+      "content": "Check out 'The Alchemist' by Paulo Coelho. It's a great read!",
+      "received": "2 days ago"
+    },
+    {
+      "title": "Message from techgeek101",
+      "content": "Are you attending the tech conference next month?",
+      "received": "3 days ago"
+    },
+    {
+      "title": "Message from adventureseeker",
+      "content": "Would you like to join our hiking trip this weekend?",
+      "received": "4 days ago"
+    },
+    {
+      "title": "Message from foodie123",
+      "content": "Have you tried the new Italian restaurant downtown?",
+      "received": "5 days ago"
+    },
+    {
+      "title": "Message from musiclover",
+      "content": "I just found this amazing new band. You should listen to their album!",
+      "received": "6 days ago"
+    },
+    {
+      "title": "Message from travelbug",
+      "content": "What are your travel plans for the summer?",
+      "received": "1 week ago"
+    },
+    {
+      "title": "Message from moviebuff",
+      "content": "Have you seen the latest Marvel movie?",
+      "received": "1 week ago"
+    }
+]

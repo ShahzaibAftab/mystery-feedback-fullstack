@@ -35,7 +35,7 @@ export default function SignInForm() {
       identifier: data.identifier,
       password: data.password,
     });
-
+    console.log('res', result)
     if (result?.error) {
       if (result.error === 'CredentialsSignin') {
         toast({
@@ -64,7 +64,7 @@ export default function SignInForm() {
           <h1 className="text-3xl font-extrabold tracking-tight lg:text-5xl mb-6">
             Welcome Back to Mystery Feedback
           </h1>
-          <p className="mb-4">Sign in to continue your secret conversations</p>
+          <p className="mb-4">Sign in to continue your private conversations</p>
         </div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
