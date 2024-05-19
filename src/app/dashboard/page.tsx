@@ -15,8 +15,9 @@ import { useSession } from 'next-auth/react';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { AcceptMessageSchema } from '@/schemas/acceptMessageSchema';
+import Navbar from '@/components/Navbar';
 
-function UserDashboard() {
+export default function UserDashboard() {
     const [messages, setMessages] = useState<Message[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const [isSwitchLoading, setIsSwitchLoading] = useState(false);
@@ -135,6 +136,7 @@ function UserDashboard() {
 
     return (
         <>
+     <Navbar/>
         <div className="my-8 mx-4 md:mx-8 lg:mx-auto p-6 bg-white rounded w-full max-w-6xl">
             <h1 className="text-4xl font-bold mb-4">User Dashboard</h1>
 
@@ -195,5 +197,3 @@ function UserDashboard() {
         </>
     );
 }
-
-export default UserDashboard;

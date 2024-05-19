@@ -19,7 +19,6 @@ import { signInSchema } from '@/schemas/signInSchema';
 
 export default function SignInForm() {
   const router = useRouter();
-
   const form = useForm<z.infer<typeof signInSchema>>({
     resolver: zodResolver(signInSchema),
     defaultValues: {
@@ -35,7 +34,7 @@ export default function SignInForm() {
       identifier: data.identifier,
       password: data.password,
     });
-    console.log('res', result)
+    // console.log('res', result)
     if (result?.error) {
       if (result.error === 'CredentialsSignin') {
         toast({
@@ -50,10 +49,18 @@ export default function SignInForm() {
           variant: 'destructive',
         });
       }
+      if (result.error === 'Error: Incorrect password') {
+        toast({
+          title: 'Incorrect Password',
+          description: 'Incorrect username or password',
+          variant: 'destructive',
+        });
+      }
     }
 
     if (result?.url) {
-      router.replace('/dashboard');
+      // router.replace('/dashboard');
+      router.push('/dashboard')
     }
   };
 
