@@ -55,7 +55,7 @@ export async function GET(request: Request) {
         );
     }
 }
-function getUsernameFromUrl(url) {
+function getUsernameFromUrl(url:any) {
     // Find the index of the '?' character
     const queryStringStart = url.indexOf('?');
 
